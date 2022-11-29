@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+*{
+ margin:0;
+ padding: 0;
+ outline: 0;
+}
+
+table{
+ position: absolute;
+ z-index: 2;
+ left: 50%;
+ top: 200px;
+ transform: translate(-50%,-50%);
+ width: 60%; 
+ border-collapse: collapse;
+ border-spacing: 0;
+ box-shadow: 0 2px 15px rgba(64,64,64,.7);
+ overflow: hidden;
+}
+td , th{
+ padding: 15px 20px;
+ text-align: center;
+ 
+
+}
+th{
+ background-color: #ba68c8;
+ color: #fafafa;
+ font-family: 'Open Sans',Sans-serif;
+ font-weight: 200;
+ text-transform: uppercase;
+}
+tr{
+ width: 100%;
+ background-color: #fafafa;
+ font-family: 'Montserrat', sans-serif;
+}
+tr:nth-child(even){
+ background-color: #eeeeee;
+}
+.caption{
+    padding: 10px 0 30px 0;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    color: #063970;
+    font-weight: bold;
+}
+
+.btn-div{
+  color: hsl(0, 0%, 98%);
+  display: flex;
+  justify-content: center; 
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding: 500px ;
+  justify-content: space-between;
+}
+
+button{
+  background-color: #ba68c8;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+
+}
+
+.clsTable{
+  counter-reset: Serial_Number;
+  z-index: -1;
+}
+
+.clsTable td:first-child:before {
+  counter-increment: Serial_Number;
+  content: counter(Serial_Number);
+  text-align: center;
+}
+
